@@ -1,2 +1,80 @@
 @import "../style/reset";
 @import "../style/style";
+
+// main panel
+.main {
+  .container {
+    width: 100%;
+    padding: 9.5em 25px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-dark);
+
+    &_about {
+      width: calc(100% / 3);
+      animation: moveBottom 1.2s ease forwards;
+
+      &-text {
+        margin-top: 20px;
+      }
+    }
+
+    &_image {
+      animation: moveBottom 1.2s ease forwards;
+      &-item {
+        width: 55%;
+        border-radius: 50%;
+        margin-top: -75px;
+        margin-left: 17%;
+        border: 3px solid #359ce0;
+        animation: moving 8s ease-in-out infinite;
+
+        @keyframes moving {
+          50% {
+            transform: translateY(110px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+
+    &_bio {
+      width: 25%;
+      animation: moveDown 1.2s ease forwards;
+
+      &-age {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .color {
+    color: #359ce0;
+  }
+}
+
+// footer panel
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-left: 4.5%;
+  .icons {
+    font-size: 35px;
+    padding: 0px 25px;
+    opacity: 0;
+    animation: moveLeft 1.2s ease forwards;
+
+    &_link {
+      color: var(--text-dark) !important;
+      color: #000;
+
+      &:hover {
+        color: #359ce0 !important;
+      }
+    }
+  }
+}

@@ -44,6 +44,7 @@ $animation-delay: 0.7s;
 // container
 .container {
   width: 25%;
+  animation: moveLeft 1.2s ease forwards;
 }
 
 // list
@@ -60,13 +61,13 @@ $animation-delay: 0.7s;
 
   @keyframes moving {
     0% {
-      transform: translateY(-10px);
+      transform: translateY(-70px);
     }
     50% {
-      transform: translateY(105px);
+      transform: translateY(70px);
     }
     100% {
-      transform: translateY(-10px);
+      transform: translateY(-70px);
     }
   }
 }
@@ -75,6 +76,8 @@ $animation-delay: 0.7s;
   color: var(--text-dark);
   text-align: center;
   margin-top: 5%;
+  animation: moveBottom 1.2s ease forwards;
+  opacity: 0;
 }
 
 // skills bar
@@ -83,9 +86,11 @@ $animation-delay: 0.7s;
   margin: 0 auto;
   width: 40%;
   min-width: 350px;
-  top: 17em;
+  top: 3em;
   transform: translate(-15%, -60%);
   list-style: none;
+  animation: moveRight 1.2s ease forwards;
+  opacity: 0;
 
   li {
     position: relative;

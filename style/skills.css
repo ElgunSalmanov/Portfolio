@@ -89,8 +89,7 @@ body {
   display: none;
 }
 .head .link {
-  color: var(--text-dark) !important;
-  color: #000;
+  color: var(--text-dark);
 }
 .head .link:hover {
   color: #359ce0 !important;
@@ -156,6 +155,7 @@ a:is(:link, :active, :visited).active {
 
 .container {
   width: 25%;
+  animation: moveLeft 1.2s ease forwards;
 }
 
 .container-list {
@@ -172,13 +172,13 @@ a:is(:link, :active, :visited).active {
 }
 @keyframes moving {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(-70px);
   }
   50% {
-    transform: translateY(105px);
+    transform: translateY(70px);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-70px);
   }
 }
 
@@ -186,6 +186,8 @@ a:is(:link, :active, :visited).active {
   color: var(--text-dark);
   text-align: center;
   margin-top: 5%;
+  animation: moveBottom 1.2s ease forwards;
+  opacity: 0;
 }
 
 .skills-bar-container {
@@ -193,9 +195,11 @@ a:is(:link, :active, :visited).active {
   margin: 0 auto;
   width: 40%;
   min-width: 350px;
-  top: 17em;
+  top: 3em;
   transform: translate(-15%, -60%);
   list-style: none;
+  animation: moveRight 1.2s ease forwards;
+  opacity: 0;
 }
 .skills-bar-container li {
   position: relative;
