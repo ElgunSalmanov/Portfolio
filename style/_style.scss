@@ -90,7 +90,7 @@ body {
   }
 
   .link {
-    color: var(--text-dark);
+    color: var(--text-dark) !important;
 
     &:hover {
       color: #359ce0 !important;

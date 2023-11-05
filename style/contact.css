@@ -89,7 +89,7 @@ body {
   display: none;
 }
 .head .link {
-  color: var(--text-dark);
+  color: var(--text-dark) !important;
 }
 .head .link:hover {
   color: #359ce0 !important;
