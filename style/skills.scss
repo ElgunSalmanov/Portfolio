@@ -1,0 +1,310 @@
+@import "../style/reset";
+@import "../style/style";
+
+// common
+$animation-delay: 0.7s;
+
+// mixins
+@mixin kerning($kerning) {
+  letter-spacing: $kerning + px;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// skills
+.skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// container
+.container {
+  width: 25%;
+}
+
+// list
+.container-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-top: 8em;
+  transform: translate(60%, 0%);
+  animation: moving 8s ease-in-out infinite;
+
+  @keyframes moving {
+    0% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(105px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+.content {
+  color: var(--text-dark);
+  text-align: center;
+  margin-top: 5%;
+}
+
+// skills bar
+.skills-bar-container {
+  position: relative;
+  margin: 0 auto;
+  width: 40%;
+  min-width: 350px;
+  top: 17em;
+  transform: translate(-15%, -60%);
+  list-style: none;
+
+  li {
+    position: relative;
+    width: 100%;
+    padding: 9px 2px;
+  }
+}
+
+// progress
+.progressbar-title {
+  color: #ff6347;
+
+  .html {
+    color: #ff6347;
+  }
+
+  .css {
+    color: #138ee0;
+  }
+
+  .scss {
+    color: #f083ea;
+  }
+
+  .js {
+    color: #c9c60e;
+  }
+
+  .c {
+    color: #0e4bbe;
+  }
+
+  .ms {
+    color: #df0e0e;
+  }
+
+  .boot {
+    color: #4c0ebe;
+  }
+
+  .react {
+    color: #16e6d4;
+  }
+
+  // col
+  .colCss {
+    color: #138ee0;
+  }
+
+  .colScss {
+    color: #f083ea;
+  }
+
+  .colJs {
+    color: #c9c60e;
+  }
+
+  .colC {
+    color: #0e4bbe;
+  }
+
+  .colMs {
+    color: #df0e0e;
+  }
+
+  .colBoot {
+    color: #4c0ebe;
+  }
+
+  .colReact {
+    color: #16e6d4;
+  }
+
+  .percent {
+    position: absolute;
+    right: 4px;
+    top: 15px;
+  }
+}
+
+.progresstomatoes {
+  background: #ff6347;
+}
+
+.backCss {
+  background: #138ee0;
+}
+
+.backScss {
+  background: #f083ea;
+}
+
+.backJs {
+  background: #c9c60e;
+}
+
+.backC {
+  background: #0e4bbe;
+}
+
+.backMs {
+  background: #df0e0e;
+}
+
+.backBoot {
+  background: #4c0ebe;
+}
+
+.backReact {
+  background: #16e6d4;
+}
+
+// bar
+.bar-container {
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 10px;
+  display: block;
+  @include border-radius(5px);
+  margin-bottom: -15px;
+
+  .progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    @include border-radius(5px);
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+  }
+}
+
+// animation-delay
+#progress-html {
+  animation-name: progress-html;
+  animation-delay: $animation-delay;
+}
+
+#progress-css {
+  animation-name: progress-css;
+  animation-delay: $animation-delay * 2;
+}
+
+#progress-scss {
+  animation-name: progress-scss;
+  animation-delay: $animation-delay * 2;
+}
+
+#progress-javascript {
+  animation-name: progress-javascript;
+  animation-delay: $animation-delay * 3;
+}
+
+#progress-c {
+  animation-name: progress-c;
+  animation-delay: $animation-delay * 4;
+}
+
+#progress-ms {
+  animation-name: progress-ms;
+  animation-delay: $animation-delay * 5;
+}
+
+#progress-bootstrap {
+  animation-name: progress-bootstrap;
+  animation-delay: $animation-delay * 6;
+}
+
+#progress-react {
+  animation-name: progress-react;
+  animation-delay: $animation-delay * 7;
+}
+
+// keyframes
+@include keyframes(progress-html) {
+  0% {
+    width: 0%;
+  }
+}
+
+@include keyframes(progress-css) {
+  0% {
+    width: 0%;
+  }
+}
+
+@include keyframes(progress-scss) {
+  0% {
+    width: 0%;
+  }
+}
+
+@include keyframes(progress-javascript) {
+  0% {
+    width: 0%;
+  }
+}
+
+@include keyframes(progress-c) {
+  0% {
+    width: 0%;
+  }
+}
+
+@include keyframes(progress-bootstrap) {
+  0% {
+    width: 0%;
+  }
+}
+
+@include keyframes(progress-ms) {
+  0% {
+    width: 0%;
+  }
+}
+
+@include keyframes(progress-react) {
+  0% {
+    width: 0%;
+  }
+}

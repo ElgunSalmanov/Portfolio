@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Exo", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  --text-white: #fff;
+  --text-dark: #000;
+  --bg-grey-light: #f5f5f5;
+  --bg-white: #fff;
+  --bg-blue-dark: #000;
+  --bg-indigo: #6366f1;
+  background-color: var(--bg-grey-light);
+  transition: 0.7s;
+}
+
+.light {
+  --text-white: #fff;
+  --text-dark: #000;
+  --bg-grey-light: #f5f5f5;
+  --bg-white: #fff;
+  --bg-blue-dark: #000;
+  --bg-indigo: #6366f1;
+}
+
+.dark {
+  --text-white: #e6e6e6;
+  --text-dark: #fff;
+  --bg-grey-light: #000;
+  --bg-white: #000;
+  --bg-blue-dark: #000;
+  --bg-indigo: #7577e1;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 999;
+}
+.loading img {
+  width: 45%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.head {
+  color: var(--text-dark);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 25px;
+}
+.head .point {
+  color: #359ce0;
+}
+.head .navbar {
+  opacity: 0;
+  animation: moveBottom 1.2s ease forwards;
+}
+.head .navbar_list {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.head .navbar .darkLight {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.head .navbar .darkLight-sun {
+  display: none;
+}
+.head .link {
+  color: var(--text-dark) !important;
+  color: #000;
+}
+.head .link:hover {
+  color: #359ce0 !important;
+}
+.head .portfolio {
+  opacity: 0;
+  animation: moveRight 1.2s ease forwards;
+}
+.head .point {
+  opacity: 0;
+  animation: moveRight 1.2s ease forwards;
+}
+
+a:is(:link, :active, :visited).active {
+  color: #359ce0 !important;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  width: 25%;
+}
+
+.container-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 15px;
+  margin-top: 8em;
+  transform: translate(60%, 0%);
+  animation: moving 8s ease-in-out infinite;
+}
+@keyframes moving {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(105px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.content {
+  color: var(--text-dark);
+  text-align: center;
+  margin-top: 5%;
+}
+
+.skills-bar-container {
+  position: relative;
+  margin: 0 auto;
+  width: 40%;
+  min-width: 350px;
+  top: 17em;
+  transform: translate(-15%, -60%);
+  list-style: none;
+}
+.skills-bar-container li {
+  position: relative;
+  width: 100%;
+  padding: 9px 2px;
+}
+
+.progressbar-title {
+  color: #ff6347;
+}
+.progressbar-title .html {
+  color: #ff6347;
+}
+.progressbar-title .css {
+  color: #138ee0;
+}
+.progressbar-title .scss {
+  color: #f083ea;
+}
+.progressbar-title .js {
+  color: #c9c60e;
+}
+.progressbar-title .c {
+  color: #0e4bbe;
+}
+.progressbar-title .ms {
+  color: #df0e0e;
+}
+.progressbar-title .boot {
+  color: #4c0ebe;
+}
+.progressbar-title .react {
+  color: #16e6d4;
+}
+.progressbar-title .colCss {
+  color: #138ee0;
+}
+.progressbar-title .colScss {
+  color: #f083ea;
+}
+.progressbar-title .colJs {
+  color: #c9c60e;
+}
+.progressbar-title .colC {
+  color: #0e4bbe;
+}
+.progressbar-title .colMs {
+  color: #df0e0e;
+}
+.progressbar-title .colBoot {
+  color: #4c0ebe;
+}
+.progressbar-title .colReact {
+  color: #16e6d4;
+}
+.progressbar-title .percent {
+  position: absolute;
+  right: 4px;
+  top: 15px;
+}
+
+.progresstomatoes {
+  background: #ff6347;
+}
+
+.backCss {
+  background: #138ee0;
+}
+
+.backScss {
+  background: #f083ea;
+}
+
+.backJs {
+  background: #c9c60e;
+}
+
+.backC {
+  background: #0e4bbe;
+}
+
+.backMs {
+  background: #df0e0e;
+}
+
+.backBoot {
+  background: #4c0ebe;
+}
+
+.backReact {
+  background: #16e6d4;
+}
+
+.bar-container {
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 10px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: -15px;
+}
+.bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 5px;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+#progress-html {
+  animation-name: progress-html;
+  animation-delay: 0.7s;
+}
+
+#progress-css {
+  animation-name: progress-css;
+  animation-delay: 1.4s;
+}
+
+#progress-scss {
+  animation-name: progress-scss;
+  animation-delay: 1.4s;
+}
+
+#progress-javascript {
+  animation-name: progress-javascript;
+  animation-delay: 2.1s;
+}
+
+#progress-c {
+  animation-name: progress-c;
+  animation-delay: 2.8s;
+}
+
+#progress-ms {
+  animation-name: progress-ms;
+  animation-delay: 3.5s;
+}
+
+#progress-bootstrap {
+  animation-name: progress-bootstrap;
+  animation-delay: 4.2s;
+}
+
+#progress-react {
+  animation-name: progress-react;
+  animation-delay: 4.9s;
+}
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes progress-scss {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes progress-c {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes progress-bootstrap {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes progress-ms {
+  0% {
+    width: 0%;
+  }
+}
+@keyframes progress-react {
+  0% {
+    width: 0%;
+  }
+}/*# sourceMappingURL=skills.css.map */

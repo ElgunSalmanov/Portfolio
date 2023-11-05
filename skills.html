@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2&family=Exo:wght@500&family=Montserrat&family=Phudu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Skills</title>
+    <link rel="icon" href="./assets/logo/logo.png" sizes="32x32" />
+    <link rel="stylesheet" href="./style/skills.css" />
+  </head>
+
+  <body>
+    <!-- loading -->
+    <div class="loading">
+      <img src="./assets/gif/portfolio.gif" alt="intro" />
+    </div>
+
+    <!-- header -->
+    <header class="head hidden">
+      <h2 class="portfolio">
+        <a class="link" href="./index.html">Portfolio</a
+        ><span class="point">.</span>
+      </h2>
+      <nav class="navbar">
+        <ul class="navbar_list">
+          <li class="navbar_list-item">
+            <a class="link" href="./index.html">Home</a>
+          </li>
+          <li class="navbar_list-item">
+            <a class="link" href="./skills.html">Skills</a>
+          </li>
+          <li class="navbar_list-item">
+            <a class="link" href="./about.html">About</a>
+          </li>
+          <li class="navbar_list-item">
+            <a class="link" href="./project.html">Projects</a>
+          </li>
+          <li class="navbar_list-item">
+            <a class="link" href="./contact.html">Contact</a>
+          </li>
+          <li class="darkLight">
+            <ion-icon class="darkLight-moon" name="moon-outline"></ion-icon>
+            <ion-icon class="darkLight-sun" name="sunny-outline"></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <h1 class="content">My skills</h1>
+      <section class="skills">
+        <div class="development_title">
+          <ul class="skills-bar-container">
+            <li>
+              <div class="progressbar-title">
+                <h3 class="html">HTML5</h3>
+                <span class="percent" id="html-pourcent"></span>
+              </div>
+              <div class="bar-container">
+                <span
+                  class="progressbar progresstomatoes"
+                  id="progress-html"
+                ></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <h3 class="css">CSS</h3>
+                <span class="percent colCss" id="css-pourcent"></span>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar backCss" id="progress-css"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <h3 class="scss">Scss</h3>
+                <span class="percent colScss" id="scss-pourcent"></span>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar backScss" id="progress-scss"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <h3 class="js">JavaScript</h3>
+                <span class="percent colJs" id="javascript-pourcent"></span>
+              </div>
+              <div class="bar-container">
+                <span
+                  class="progressbar backJs"
+                  id="progress-javascript"
+                ></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <h3 class="c">C++</h3>
+                <span class="percent colC" id="c-pourcent"></span>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar backC" id="progress-c"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title col">
+                <h3 class="ms">MsSql</h3>
+                <span class="percent colMs" id="ms-pourcent"></span>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar backMs" id="progress-ms"></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <h3 class="boot">Bootstrap</h3>
+                <span class="percent colBoot" id="bootstrap-pourcent"></span>
+              </div>
+              <div class="bar-container">
+                <span
+                  class="progressbar backBoot"
+                  id="progress-bootstrap"
+                ></span>
+              </div>
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <h3 class="react">React</h3>
+                <span class="percent colReact" id="react-pourcent"></span>
+              </div>
+              <div class="bar-container">
+                <span class="progressbar backReact" id="progress-react"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <ul class="container-list">
+            <li class="container-list_item">
+              <img src="./assets/img/html.png" alt="html logo" />
+            </li>
+            <li class="container-list_item">
+              <img src="./assets/img/css-3.png" alt="css logo" />
+            </li>
+            <li class="container-list_item">
+              <img src="./assets/img/sass.png" alt="scss logo" />
+            </li>
+            <li class="container-list_item">
+              <img src="./assets/img/js.png" alt="js logo" />
+            </li>
+            <li class="container-list_item">
+              <img src="./assets/img/c-.png" alt="c++ logo" />
+            </li>
+            <li class="container-list_item">
+              <img src="./assets/img/sql-server.png" alt="mssql logo" />
+            </li>
+            <li class="container-list_item">
+              <img src="./assets/img/bootstrap.png" alt="bootstrap logo" />
+            </li>
+            <li class="container-list_item">
+              <img src="./assets/img/react.png" alt="react logo" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./utils/activited.js"></script>
+    <script src="./utils/loading.js"></script>
+    <script src="./utils/dark-light.js"></script>
+    <script src="./js/skills.js"></script>
+  </body>
+</html>

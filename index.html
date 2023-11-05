@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2&family=Exo:wght@500&family=Montserrat&family=Phudu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+    <link rel="icon" href="./assets/logo/logo.png" sizes="32x32" />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+
+  <body>
+    <!-- loading -->
+    <div class="loading">
+      <img src="./assets/gif/portfolio.gif" alt="intro" />
+    </div>
+
+    <!-- header -->
+    <header class="head hidden">
+      <h2 class="portfolio">
+        <a class="link" href="./index.html">Portfolio</a
+        ><span class="point">.</span>
+      </h2>
+      <nav class="navbar">
+        <ul class="navbar_list">
+          <li class="navbar_list-item">
+            <a class="link" href="./index.html">Home</a>
+          </li>
+          <li class="navbar_list-item">
+            <a class="link" href="./skills.html">Skills</a>
+          </li>
+          <li class="navbar_list-item">
+            <a class="link" href="./about.html">About</a>
+          </li>
+          <li class="navbar_list-item">
+            <a class="link" href="./project.html">Projects</a>
+          </li>
+          <li class="navbar_list-item">
+            <a class="link" href="./contact.html">Contact</a>
+          </li>
+          <li class="darkLight">
+            <ion-icon class="darkLight-moon" name="moon-outline"></ion-icon>
+            <ion-icon class="darkLight-sun" name="sunny-outline"></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main hidden">
+      <section class="home">
+        <div class="home_info">
+          <p class="home_info-text">Hello</p>
+          <h1 class="home_info-content">I am <span class="name"></span></h1>
+          <p class="home_info-text">
+            A <span class="job">Front-End Developer</span> passionate about
+            creating interactive and experiences on the web.
+          </p>
+          <button class="home_button">
+            Download CV <ion-icon name="document-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="home_picture">
+          <img
+            class="home_picture-img"
+            src="./assets/img/profile.jpg"
+            alt="profile-image"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer hidden">
+      <div class="icons">
+        <a class="icons_link" href="https://github.com/ElgunSalmanov"
+          ><ion-icon class="icons_link-item" name="logo-github"
+            >github</ion-icon
+          ></a
+        >
+        <a class="icons_link" href="https://www.instagram.com/13elgun13/"
+          ><ion-icon name="logo-instagram">instagram</ion-icon></a
+        >
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="./utils/activited.js"></script>
+    <script src="./utils/loading.js"></script>
+    <script src="./utils/dark-light.js"></script>
+    <script src="./utils/write.js"></script>
+  </body>
+</html>

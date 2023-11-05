@@ -1,0 +1,134 @@
+@import "../style/reset";
+@import "../style/style";
+
+// main panel
+.main {
+  padding: 30px 11px;
+
+  .home {
+    padding: 100px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-dark) !important;
+
+    &_info {
+      width: 40%;
+
+      &-content {
+        font-size: 4em;
+        margin-block-start: 10px;
+        margin-block-end: 10px;
+        margin-left: -3px;
+        animation: moveRight 1.2s ease forwards;
+      }
+
+      &-text {
+        font-size: 20px;
+        opacity: 0;
+        animation: moveBottom 1.2s ease forwards;
+
+        &:nth-of-type(2) {
+          animation: moveDown 1.2s ease forwards;
+        }
+
+        .job {
+          color: #359ce0;
+        }
+      }
+    }
+
+    &_picture {
+      &-img {
+        width: 100%;
+        border-radius: 50%;
+        margin-top: -40px;
+        margin-right: -8em;
+        border: 3px solid #359ce0;
+        animation: moving 8s ease-in-out infinite;
+
+        @keyframes moving {
+          100% {
+            transform: translateX(0px);
+          }
+          50% {
+            transform: translateX(-100px);
+          }
+        }
+      }
+    }
+
+    .name {
+      color: #359ce0;
+    }
+
+    &_button {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 3px;
+      margin-top: 22px;
+      padding: 10px 20px;
+      color: var(--text-dark);
+      background: #359ce0;
+      border: 2px solid var(--text-dark);
+      border-radius: 2px;
+      font-weight: 600;
+      cursor: pointer;
+      animation: moveLeft 1.2s ease forwards;
+      opacity: 0;
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        transition: 0.5s;
+      }
+
+      &::after {
+        top: -9px;
+        left: -9px;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-radius: 2px;
+      }
+
+      &::before {
+        bottom: -9px;
+        right: -9px;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-radius: 2px;
+      }
+
+      &:hover::after,
+      &:hover::before {
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        border-color: #359ce0;
+      }
+    }
+  }
+}
+
+// footer panel
+.footer {
+  margin-top: -11em;
+  .icons {
+    font-size: 35px;
+    padding: 0px 25px;
+    opacity: 0;
+    animation: moveBottom 1.2s ease forwards;
+
+    &_link {
+      color: var(--text-dark) !important;
+      color: #000;
+
+      &:hover {
+        color: #359ce0 !important;
+      }
+    }
+  }
+}

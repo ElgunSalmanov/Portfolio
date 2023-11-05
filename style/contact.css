@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Exo", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  --text-white: #fff;
+  --text-dark: #000;
+  --bg-grey-light: #f5f5f5;
+  --bg-white: #fff;
+  --bg-blue-dark: #000;
+  --bg-indigo: #6366f1;
+  background-color: var(--bg-grey-light);
+  transition: 0.7s;
+}
+
+.light {
+  --text-white: #fff;
+  --text-dark: #000;
+  --bg-grey-light: #f5f5f5;
+  --bg-white: #fff;
+  --bg-blue-dark: #000;
+  --bg-indigo: #6366f1;
+}
+
+.dark {
+  --text-white: #e6e6e6;
+  --text-dark: #fff;
+  --bg-grey-light: #000;
+  --bg-white: #000;
+  --bg-blue-dark: #000;
+  --bg-indigo: #7577e1;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 999;
+}
+.loading img {
+  width: 45%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.head {
+  color: var(--text-dark);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 25px;
+}
+.head .point {
+  color: #359ce0;
+}
+.head .navbar {
+  opacity: 0;
+  animation: moveBottom 1.2s ease forwards;
+}
+.head .navbar_list {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.head .navbar .darkLight {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.head .navbar .darkLight-sun {
+  display: none;
+}
+.head .link {
+  color: var(--text-dark) !important;
+  color: #000;
+}
+.head .link:hover {
+  color: #359ce0 !important;
+}
+.head .portfolio {
+  opacity: 0;
+  animation: moveRight 1.2s ease forwards;
+}
+.head .point {
+  opacity: 0;
+  animation: moveRight 1.2s ease forwards;
+}
+
+a:is(:link, :active, :visited).active {
+  color: #359ce0 !important;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=contact.css.map */
