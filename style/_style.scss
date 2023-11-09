@@ -90,7 +90,7 @@ body {
   }
 
   .link {
-    color: var(--text-dark) !important;
+    color: var(--text-dark);
 
     &:hover {
       color: #359ce0 !important;
@@ -110,7 +110,7 @@ body {
 
 // active color
 a:is(:link, :active, :visited).active {
-  color: #359ce0 !important;
+  color: #359ce0;
 }
 
 // keyframes animation
@@ -150,6 +150,17 @@ a:is(:link, :active, :visited).active {
 @keyframes moveDown {
   0% {
     transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveTop {
+  0% {
+    transform: translateY(80px);
     opacity: 0;
   }
   100% {
