@@ -192,7 +192,12 @@ a:is(:link, :active, :visited).active {
   row-gap: 25px;
   border: 2px solid var(--text-dark);
   border-radius: 7px;
+  transition: all 0.4s;
+  filter: grayscale(100%);
   animation: moveRight 1.2s ease forwards;
+}
+.main .projects .up-left:hover {
+  filter: grayscale(0%);
 }
 .main .projects .up-left_img {
   width: 100%;
@@ -211,7 +216,12 @@ a:is(:link, :active, :visited).active {
   row-gap: 25px;
   border: 2px solid var(--text-dark);
   border-radius: 7px;
+  transition: all 0.4s;
+  filter: grayscale(100%);
   animation: moveBottom 1.2s ease forwards;
+}
+.main .projects .up-center:hover {
+  filter: grayscale(0%);
 }
 .main .projects .up-center_img {
   width: 100%;
@@ -230,7 +240,12 @@ a:is(:link, :active, :visited).active {
   row-gap: 25px;
   border: 2px solid var(--text-dark);
   border-radius: 7px;
+  transition: all 0.4s;
+  filter: grayscale(100%);
   animation: moveLeft 1.2s ease forwards;
+}
+.main .projects .up-right:hover {
+  filter: grayscale(0%);
 }
 .main .projects .up-right_img {
   width: 100%;
@@ -254,7 +269,12 @@ a:is(:link, :active, :visited).active {
   row-gap: 25px;
   border: 2px solid var(--text-dark);
   border-radius: 7px;
+  transition: all 0.4s;
+  filter: grayscale(100%);
   animation: moveRight 1.2s ease forwards;
+}
+.main .projects .down-left:hover {
+  filter: grayscale(0%);
 }
 .main .projects .down-left_img {
   width: 100%;
@@ -273,7 +293,12 @@ a:is(:link, :active, :visited).active {
   row-gap: 25px;
   border: 2px solid var(--text-dark);
   border-radius: 7px;
+  transition: all 0.4s;
+  filter: grayscale(100%);
   animation: moveTop 1.2s ease forwards;
+}
+.main .projects .down-center:hover {
+  filter: grayscale(0%);
 }
 .main .projects .down-center_img {
   width: 100%;
@@ -292,7 +317,12 @@ a:is(:link, :active, :visited).active {
   row-gap: 25px;
   border: 2px solid var(--text-dark);
   border-radius: 7px;
+  transition: all 0.4s;
+  filter: grayscale(100%);
   animation: moveLeft 1.2s ease forwards;
+}
+.main .projects .down-right:hover {
+  filter: grayscale(0%);
 }
 .main .projects .down-right_img {
   width: 100%;

@@ -156,4 +156,95 @@ a:is(:link, :active, :visited).active {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.design {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  background: transparent;
+}
+
+.main .container .panel {
+  width: 500px;
+  height: 500px;
+  padding: 20px 40px;
+  background: #359ce0;
+  margin: 2% auto;
+  border-radius: 3px;
+  animation: moveLeft 1.2s ease forwards;
+  opacity: 0;
+}
+.main .container .panel-content {
+  text-align: center;
+  color: var(--text-dark);
+}
+.main .container .panel-error {
+  color: #e00707;
+}
+.main .container .panel-form_input[type=text]:focus {
+  border-bottom: 1px solid #000;
+}
+.main .container .panel-form_input[type=email]:focus {
+  border-bottom: 1px solid #000;
+}
+.main .container .panel-form_textarea:focus {
+  border-bottom: 1px solid #000;
+}
+.main .container .panel-form_textarea:focus::-webkit-scrollbar {
+  width: 2px;
+}
+.main .container .panel-form_textarea:focus::-webkit-scrollbar-thumb {
+  background: #000;
+}
+.main .container .panel-form_label {
+  display: block;
+  margin: 15px 0;
+  color: var(--text-dark);
+}
+.main .container .panel .sending-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 20px;
+  margin: 15px 39%;
+  color: var(--text-dark);
+  background: #359ce0;
+  border: 1px solid var(--text-dark);
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.main .container .panel .sending-button::after, .main .container .panel .sending-button::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+.main .container .panel .sending-button::after {
+  top: -7px;
+  left: -7px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-radius: 2px;
+}
+.main .container .panel .sending-button::before {
+  bottom: -7px;
+  right: -7px;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-radius: 2px;
+}
+.main .container .panel .sending-button:hover::after, .main .container .panel .sending-button:hover::before {
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  border-color: var(--text-dark);
+}
+.main .container .panel .sending-success {
+  color: var(--text-dark);
+  text-align: center;
 }/*# sourceMappingURL=contact.css.map */

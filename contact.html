@@ -51,6 +51,49 @@
       </nav>
     </header>
 
+    <!-- main -->
+    <main class="main hidden">
+      <section class="container">
+        <div class="panel">
+          <h1 class="panel-content">Contact Us</h1>
+
+          <form class="panel-form">
+            <label class="panel-form_label" for="name">Name:</label>
+            <input
+              type="text"
+              class="panel-form_input design"
+              id="name"
+              placeholder="Enter the your name please!"
+            />
+            <small class="panel-error"></small>
+
+            <label class="panel-form_label" for="email">Email:</label>
+            <input
+              type="email"
+              class="panel-form_input design"
+              id="email"
+              placeholder="Enter the your email please!"
+            />
+            <small class="panel-error"></small>
+
+            <label class="panel-form_label" for="message">Message:</label>
+            <textarea
+              class="panel-form_textarea design"
+              id="message"
+              rows="5"
+              placeholder="Enter the message please!"
+            ></textarea>
+            <small class="panel-error"></small>
+          </form>
+
+          <div class="sending">
+            <button class="sending-button" type="submit">Submit</button>
+            <p class="sending-success"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- scripts -->
     <script
       type="module"
@@ -61,6 +104,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <script src="./js/contact.js"></script>
     <script src="./utils/activited.js"></script>
     <script src="./utils/loading.js"></script>
     <script src="./utils/dark-light.js"></script>

@@ -37,7 +37,13 @@
         row-gap: 25px;
         border: 2px solid var(--text-dark);
         border-radius: 7px;
+        transition: all 0.4s;
+        filter: grayscale(100%);
         animation: moveRight 1.2s ease forwards;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
 
         &_img {
           width: 100%;
@@ -56,7 +62,13 @@
         row-gap: 25px;
         border: 2px solid var(--text-dark);
         border-radius: 7px;
+        transition: all 0.4s;
+        filter: grayscale(100%);
         animation: moveBottom 1.2s ease forwards;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
 
         &_img {
           width: 100%;
@@ -75,7 +87,13 @@
         row-gap: 25px;
         border: 2px solid var(--text-dark);
         border-radius: 7px;
+        transition: all 0.4s;
+        filter: grayscale(100%);
         animation: moveLeft 1.2s ease forwards;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
 
         &_img {
           width: 100%;
@@ -99,7 +117,13 @@
         row-gap: 25px;
         border: 2px solid var(--text-dark);
         border-radius: 7px;
+        transition: all 0.4s;
+        filter: grayscale(100%);
         animation: moveRight 1.2s ease forwards;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
 
         &_img {
           width: 100%;
@@ -118,7 +142,13 @@
         row-gap: 25px;
         border: 2px solid var(--text-dark);
         border-radius: 7px;
+        transition: all 0.4s;
+        filter: grayscale(100%);
         animation: moveTop 1.2s ease forwards;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
 
         &_img {
           width: 100%;
@@ -137,7 +167,13 @@
         row-gap: 25px;
         border: 2px solid var(--text-dark);
         border-radius: 7px;
+        transition: all 0.4s;
+        filter: grayscale(100%);
         animation: moveLeft 1.2s ease forwards;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
 
         &_img {
           width: 100%;

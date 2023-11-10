@@ -1,2 +1,119 @@
 @import "../style/reset";
 @import "../style/style";
+
+// design for input and textarea
+.design {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  background: transparent;
+}
+
+.main {
+  .container {
+    .panel {
+      width: 500px;
+      height: 500px;
+      padding: 20px 40px;
+      background: #359ce0;
+      margin: 2% auto;
+      border-radius: 3px;
+      animation: moveLeft 1.2s ease forwards;
+      opacity: 0;
+
+      &-content {
+        text-align: center;
+        color: var(--text-dark);
+      }
+
+      &-error {
+        color: #e00707;
+      }
+
+      &-form {
+        &_input[type="text"]:focus {
+          border-bottom: 1px solid #000;
+        }
+
+        &_input[type="email"]:focus {
+          border-bottom: 1px solid #000;
+        }
+
+        &_textarea:focus {
+          border-bottom: 1px solid #000;
+
+          &::-webkit-scrollbar {
+            width: 2px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #000;
+          }
+        }
+
+        &_label {
+          display: block;
+          margin: 15px 0;
+          color: var(--text-dark);
+        }
+      }
+
+      .sending {
+        &-button {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 7px 20px;
+          margin: 15px 39%;
+          color: var(--text-dark);
+          background: #359ce0;
+          border: 1px solid var(--text-dark);
+          border-radius: 3px;
+          font-weight: 600;
+          cursor: pointer;
+
+          &::after,
+          &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            transition: 0.5s;
+          }
+
+          &::after {
+            top: -7px;
+            left: -7px;
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            border-radius: 2px;
+          }
+
+          &::before {
+            bottom: -7px;
+            right: -7px;
+            border-bottom: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-radius: 2px;
+          }
+
+          &:hover::after,
+          &:hover::before {
+            width: calc(100% + 5px);
+            height: calc(100% + 5px);
+            border-color: var(--text-dark);
+          }
+        }
+
+        &-success {
+          color: var(--text-dark);
+          text-align: center;
+        }
+      }
+    }
+  }
+}
