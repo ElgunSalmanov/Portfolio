@@ -109,7 +109,7 @@ body {
 }
 
 // active color
-a:is(:active, :visited).active {
+a:is(:visited).active {
   color: #359ce0;
 }
 
