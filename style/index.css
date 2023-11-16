@@ -211,6 +211,7 @@ a:is(:link, :active, :visited).active {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 35%;
   -moz-column-gap: 3px;
        column-gap: 3px;
   margin-top: 22px;
