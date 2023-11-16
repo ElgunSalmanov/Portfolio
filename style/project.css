@@ -103,7 +103,7 @@ body {
   animation: moveRight 1.2s ease forwards;
 }
 
-a:is(:link, :active, :visited).active {
+a:is(:active, :visited).active {
   color: #359ce0;
 }
 
@@ -165,6 +165,8 @@ a:is(:link, :active, :visited).active {
   background: transparent;
   cursor: pointer;
   transition: 0.4s linear;
+  text-align: center;
+  margin: 16px;
 }
 .design:hover {
   letter-spacing: 2px;

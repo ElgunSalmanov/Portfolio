@@ -103,7 +103,7 @@ body {
   animation: moveRight 1.2s ease forwards;
 }
 
-a:is(:link, :active, :visited).active {
+a:is(:active, :visited).active {
   color: #359ce0;
 }
 
