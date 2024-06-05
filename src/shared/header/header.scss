@@ -1,0 +1,119 @@
+// import styles
+@import "../../style/_animations.scss";
+@import "../../style/_mixins.scss";
+
+// styles for header
+#header {
+  width: 100%;
+  padding: 15px;
+
+  @include mobile {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 5px;
+  }
+
+  .navigate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 0px;
+
+    @include mobile {
+      display: flex;
+      align-items: baseline;
+      padding: 0px;
+    }
+
+    &-view {
+      display: flex;
+      align-items: center;
+      animation: fadeRight 1s ease;
+
+      &-image {
+        width: 50px;
+        object-fit: cover;
+
+        @include mobile {
+          width: 30px;
+        }
+      }
+
+      &-content {
+        position: relative;
+        font-size: 25px;
+        padding-top: 40px;
+        left: -20px;
+        background-color: transparent;
+
+        @include mobile {
+          font-size: 20px;
+          padding-top: 25px;
+          left: -15px;
+        }
+
+        &-point {
+          color: #d6a213;
+        }
+      }
+    }
+
+    &-direction {
+      display: flex;
+      align-items: center;
+      gap: 0px 10px;
+      animation: fadeLeft 1s ease;
+
+      @include mobile {
+        width: 80%;
+        position: fixed;
+        display: flex;
+        right: 0;
+        font-size: 20px;
+        background: #000;
+        padding: 12px 0px 12px 0px;
+        transition: all 0.7s ease-in-out;
+      }
+
+      &-link {
+        font-size: 20px;
+
+        @include mobile {
+          font-size: 16px;
+        }
+
+        &:hover {
+          text-shadow: 1px 1px 2px #d6a213, 0 0 1em #d6a213, 0 0 0.2em #d6a213;
+        }
+      }
+
+      &-language {
+        width: 60px;
+        height: 25px;
+        display: flex;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 0 10px #fc0;
+        background-color: #fc0;
+        color: #fff;
+      }
+    }
+
+    &-menu {
+      display: none;
+
+      @include mobile {
+        display: flex;
+      }
+    }
+  }
+}
+
+// active link
+.active {
+  text-shadow: 1px 1px 2px #d6a213, 0 0 1em #d6a213, 0 0 0.2em #d6a213;
+}

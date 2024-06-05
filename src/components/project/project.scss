@@ -1,0 +1,131 @@
+// import styles
+@import "../../style/_animations.scss";
+
+// style for project
+.project {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px;
+  gap: 30px 0px;
+
+  &-filter {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 90px;
+    z-index: 1;
+    margin: 0 auto;
+    gap: 0px 10px;
+
+    &-all {
+      width: 80px;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #000;
+      background: #fff;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        letter-spacing: 0.5px;
+      }
+    }
+
+    &-react {
+      width: 80px;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #fff;
+      background: #0ea4d6;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        letter-spacing: 0.5px;
+      }
+    }
+
+    &-angular {
+      width: 80px;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #fff;
+      background: #da0808;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        letter-spacing: 0.5px;
+      }
+    }
+
+    &-dom {
+      width: 80px;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #fff;
+      background: #fc0;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+
+    &-box {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid #fff;
+      border-radius: 0px 20px 0px 20px;
+      box-shadow: 0px 0px 10px 0px #fc0;
+      padding: 15px;
+      gap: 20px 0px;
+      transition: 0.5s ease-in-out;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+
+      &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0px 10px 0px 10px;
+        animation: clip 1s ease;
+      }
+    }
+
+    &-logo {
+      width: 10%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

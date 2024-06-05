@@ -1,0 +1,41 @@
+// import styles
+@import "../../style/_animations.scss";
+@import "../../style/_mixins.scss";
+
+// styles for footer
+#footer {
+  display: flex;
+  justify-content: center;
+  animation: fadeUp 1s ease;
+
+  .content {
+    width: 85%;
+    padding: 40px 0 0 0;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 0 0;
+      gap: 15px 0px;
+    }
+
+    &-direction {
+      display: flex;
+      gap: 0 20px;
+
+      @include mobile {
+        justify-content: center;
+      }
+
+      &-link {
+        &:hover {
+          text-shadow: 1px 1px 2px #d6a213, 0 0 1em #d6a213, 0 0 0.2em #d6a213;
+        }
+      }
+    }
+  }
+}

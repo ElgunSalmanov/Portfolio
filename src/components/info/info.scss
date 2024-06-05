@@ -1,0 +1,93 @@
+// import styles
+@import "../../style/_animations.scss";
+
+// style for info
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 25px;
+  gap: 0px 40px;
+
+  &-image {
+    width: 25%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 80px;
+    box-shadow: 0px 0px 25px 0px #fc0;
+    animation: fadeRight 1s ease;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    gap: 0px 80px;
+
+    &-about {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px 0px;
+      padding: 0px 25px;
+
+      &-title {
+        font-size: 40px;
+        border-bottom: 1px solid #fc0;
+        animation: fadeDown 1s ease;
+      }
+
+      &-box {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px 0px;
+        font-size: 18px;
+
+        &-content-first {
+          animation: fadeUp 1s ease;
+        }
+
+        &-content-second {
+          animation: fadeUp 1.5s ease;
+        }
+
+        &-content-third {
+          animation: fadeUp 2s ease;
+        }
+      }
+    }
+
+    &-bio {
+      display: flex;
+      flex-direction: column;
+      gap: 50px 0px;
+      padding: 0px 25px;
+
+      &-title {
+        font-size: 40px;
+        border-bottom: 1px solid #fc0;
+        animation: fadeDown 1s ease;
+      }
+
+      &-box {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px 0px;
+        font-size: 18px;
+
+        &-content-first {
+          animation: fadeUp 1s ease;
+        }
+
+        &-content-second {
+          animation: fadeUp 1.5s ease;
+        }
+
+        &-content-third {
+          animation: fadeUp 2s ease;
+        }
+      }
+    }
+  }
+}
