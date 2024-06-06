@@ -1,13 +1,22 @@
 // import styles
+@import "../../style/_mixins.scss";
 @import "../../style/_animations.scss";
 
 // style for info
 .info {
   width: 100%;
+  min-height: 550px;
   display: flex;
   justify-content: space-between;
   padding: 100px 25px;
   gap: 0px 40px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 0px;
+    padding: 100px 10px 70px 10px;
+  }
 
   &-image {
     width: 25%;
@@ -15,6 +24,10 @@
     border-radius: 10px 10px 10px 80px;
     box-shadow: 0px 0px 25px 0px #fc0;
     animation: fadeRight 1s ease;
+
+    @include mobile {
+      width: 80%;
+    }
   }
 
   &-container {
@@ -23,6 +36,11 @@
     background: transparent;
     gap: 0px 80px;
 
+    @include mobile {
+      flex-direction: column;
+      gap: 50px 0px;
+    }
+
     &-about {
       width: 90%;
       display: flex;
@@ -30,10 +48,19 @@
       gap: 50px 0px;
       padding: 0px 25px;
 
+      @include mobile {
+        width: 100%;
+        gap: 25px 0px;
+      }
+
       &-title {
         font-size: 40px;
         border-bottom: 1px solid #fc0;
         animation: fadeDown 1s ease;
+
+        @include mobile {
+          font-size: 35px;
+        }
       }
 
       &-box {
@@ -42,6 +69,10 @@
         flex-direction: column;
         gap: 25px 0px;
         font-size: 18px;
+
+        @include mobile {
+          font-size: 16px;
+        }
 
         &-content-first {
           animation: fadeUp 1s ease;
@@ -63,10 +94,18 @@
       gap: 50px 0px;
       padding: 0px 25px;
 
+      @include mobile {
+        gap: 25px 0px;
+      }
+
       &-title {
         font-size: 40px;
         border-bottom: 1px solid #fc0;
         animation: fadeDown 1s ease;
+
+        @include mobile {
+          font-size: 35px;
+        }
       }
 
       &-box {
@@ -75,6 +114,10 @@
         flex-direction: column;
         gap: 25px 0px;
         font-size: 18px;
+
+        @include mobile {
+          font-size: 16px;
+        }
 
         &-content-first {
           animation: fadeUp 1s ease;

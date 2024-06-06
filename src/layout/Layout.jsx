@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Header from "../shared/header/Header";
 import Footer from "../shared/footer/Footer";
 import Loading from "../shared/loading/Loading";
-import "./layout.scss";
 
 function Layout() {
   const [loading, setLoading] = useState(true);
@@ -26,9 +25,7 @@ function Layout() {
       ) : (
         <div>
           <Header />
-          <div className="outlet">
-            <Outlet />
-          </div>
+          <Outlet />
           <Footer />
         </div>
       )}

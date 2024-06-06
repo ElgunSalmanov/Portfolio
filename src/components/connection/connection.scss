@@ -1,4 +1,5 @@
 // import styles
+@import "../../style/_mixins.scss";
 @import "../../style/_animations.scss";
 
 // style for connection
@@ -12,10 +13,19 @@
   padding: 15px 40px;
   gap: 20px 0;
 
+  @include mobile {
+    padding: 100px 10px 70px 10px;
+    gap: 30px 0;
+  }
+
   &-title {
     font-size: 40px;
     color: #fc0;
     animation: fadeDown 1s ease;
+
+    @include mobile {
+      font-size: 34px;
+    }
 
     &-point {
       color: #fff;
@@ -28,6 +38,11 @@
     text-align: center;
     line-height: 20px;
     animation: fadeDown 1s ease;
+
+    @include mobile {
+      width: 100%;
+      font-size: 18px;
+    }
   }
 
   &-form {
@@ -37,6 +52,11 @@
     align-items: center;
     padding: 15px 0px 0px 0px;
     animation: fadeUp 1s ease;
+
+    @include mobile {
+      padding: 25px 0;
+      gap: 10px 0;
+    }
 
     &-entry {
       width: 50%;
@@ -48,10 +68,18 @@
       padding: 0px 0px 5px 0px;
       color: #fff;
 
+      @include mobile {
+        width: 100%;
+      }
+
       &-validations {
         width: 50%;
         height: 55px;
         padding: 15px 0px 0px 10px;
+
+        @include mobile {
+          width: 100%;
+        }
 
         &-text {
           color: #fff;
@@ -81,6 +109,10 @@
       color: #fc0;
       cursor: pointer;
       transition: 0.5s ease-in-out;
+
+      @include mobile {
+        width: 100%;
+      }
 
       &:hover {
         background: #fc0 !important;
