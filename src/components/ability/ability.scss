@@ -18,6 +18,11 @@
     padding: 100px 15px 70px 15px;
   }
 
+  @include tablet {
+    height: 865px;
+    padding: 100px 15px 70px 15px;
+  }
+
   &-first {
     width: 40%;
     display: flex;
@@ -26,6 +31,10 @@
     animation: matrix 6s ease;
 
     @include mobile {
+      width: 72%;
+    }
+
+    @include tablet {
       width: 72%;
     }
   }
@@ -43,6 +52,11 @@
       width: 100%;
       margin-top: -5px;
     }
+
+    @include tablet {
+      width: 100%;
+      margin-top: -40px;
+    }
   }
 
   &-third {
@@ -56,6 +70,11 @@
     @include mobile {
       width: 71%;
       margin-top: -5px;
+    }
+
+    @include tablet {
+      width: 71%;
+      margin-top: -50px;
     }
   }
 
@@ -71,6 +90,11 @@
       width: 71%;
       margin-top: -5px;
     }
+
+    @include tablet {
+      width: 41%;
+      margin-top: -45px;
+    }
   }
 
   &-fifth {
@@ -82,6 +106,11 @@
     @include mobile {
       width: 17%;
       margin-top: -98px;
+    }
+
+    @include tablet {
+      width: 12%;
+      margin-top: -40px;
     }
   }
 }

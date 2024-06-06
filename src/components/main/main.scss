@@ -19,6 +19,14 @@
     padding: 100px 10px 70px 10px;
   }
 
+  @include tablet {
+    height: 865px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px 0;
+    padding: 100px 10px 70px 10px;
+  }
+
   .words {
     width: 50%;
     display: flex;
@@ -31,9 +39,19 @@
       text-align: center;
     }
 
+    @include tablet {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
     &-content {
       font-size: 25px;
       animation: fadeDown 1s ease;
+
+      @include tablet {
+        font-size: 35px;
+      }
     }
 
     &-name {
@@ -69,6 +87,10 @@
 
     @include mobile {
       width: 70%;
+    }
+
+    @include tablet {
+      width: 50%;
     }
 
     &-image {

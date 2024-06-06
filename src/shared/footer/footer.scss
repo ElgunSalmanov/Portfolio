@@ -26,6 +26,13 @@
       gap: 15px 0px;
     }
 
+    @include tablet {
+      width: 95%;
+      align-items: center;
+      padding: 20px 10px 20px 10px;
+      gap: 15px 0px;
+    }
+
     &-direction {
       display: flex;
       gap: 0 20px;

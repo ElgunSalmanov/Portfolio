@@ -17,5 +17,9 @@
     @include mobile {
       height: 90vh !important;
     }
+
+    @include tablet {
+      height: 90vh !important;
+    }
   }
 }
