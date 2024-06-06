@@ -1,4 +1,5 @@
 // import styles
+@import "../../style/_mixins.scss";
 @import "../../style/_animations.scss";
 
 // style for ability
@@ -12,12 +13,21 @@
   background: transparent;
   padding: 40px 0px;
 
+  @include mobile {
+    height: 845px;
+    padding: 100px 15px 70px 15px;
+  }
+
   &-first {
     width: 40%;
     display: flex;
     justify-content: space-between;
     background: transparent;
     animation: matrix 6s ease;
+
+    @include mobile {
+      width: 72%;
+    }
   }
 
   &-second {
@@ -28,6 +38,11 @@
     background-color: transparent;
     margin-top: -80px;
     animation: matrix 7s ease;
+
+    @include mobile {
+      width: 100%;
+      margin-top: -5px;
+    }
   }
 
   &-third {
@@ -37,6 +52,11 @@
     background-color: transparent;
     margin-top: -75px;
     animation: matrix 8s ease;
+
+    @include mobile {
+      width: 71%;
+      margin-top: -5px;
+    }
   }
 
   &-fourth {
@@ -46,6 +66,11 @@
     background-color: transparent;
     margin-top: -75px;
     animation: matrix 9s ease;
+
+    @include mobile {
+      width: 71%;
+      margin-top: -5px;
+    }
   }
 
   &-fifth {
@@ -53,6 +78,11 @@
     background-color: transparent;
     margin-top: -62px;
     animation: matrix 10s ease;
+
+    @include mobile {
+      width: 17%;
+      margin-top: -98px;
+    }
   }
 }
 
@@ -70,11 +100,20 @@
   margin: 1% 4%;
   z-index: 1;
 
+  @include mobile {
+    width: 60px;
+    height: 95px;
+  }
+
   &-image {
     position: absolute;
     width: 75px;
     z-index: 1;
     background: transparent;
+
+    @include mobile {
+      width: 50px;
+    }
   }
 }
 
