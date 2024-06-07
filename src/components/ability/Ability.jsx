@@ -1,16 +1,16 @@
-import html from "../../assets/icon/html.svg";
-import css from "../../assets/icon/css.svg";
-import js from "../../assets/icon/javascript.svg";
-import c from "../../assets/icon/c.svg";
-import cplus from "../../assets/icon/c++.svg";
-import react from "../../assets/icon/react.svg";
-import redux from "../../assets/icon/redux.svg";
-import angular from "../../assets/icon/angular-icon.svg";
-import ts from "../../assets/icon/typescript-icon.svg";
-import git from "../../assets/icon/git-icon.svg";
-import github from "../../assets/icon/github-icon.svg";
-import sass from "../../assets/icon/sass.svg";
-import bootstrap from "../../assets/icon/bootstrap-5.svg";
+import html from "../../../public/icons/html.svg";
+import css from "../../../public/icons/css.svg";
+import js from "../../../public/icons/javascript.svg";
+import c from "../../../public/icons/c.svg";
+import cplus from "../../../public/icons/c++.svg";
+import react from "../../../public/icons/react.svg";
+import redux from "../../../public/icons/redux.svg";
+import angular from "../../../public/icons/angular-icon.svg";
+import ts from "../../../public/icons/typescript-icon.svg";
+import git from "../../../public/icons/git-icon.svg";
+import github from "../../../public/icons/github-icon.svg";
+import sass from "../../../public/icons/sass.svg";
+import bootstrap from "../../../public/icons/bootstrap-5.svg";
 import "./ability.scss";
 
 function Ability() {
