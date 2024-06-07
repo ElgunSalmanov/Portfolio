@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18";
-import logo from "../../assets/logo/logo.ico";
+import logo from "../../assets/logo/logo.png";
 import menu from "../../../public/icons/menu.svg";
 import "./header.scss";
 
