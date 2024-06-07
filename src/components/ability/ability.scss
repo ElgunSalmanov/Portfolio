@@ -16,11 +16,13 @@
   @include mobile {
     height: 845px !important;
     padding: 100px 15px 70px 15px;
+    -webkit-tap-highlight-color: transparent;
   }
 
   @include tablet {
     height: 865px;
     padding: 100px 15px 70px 15px;
+    -webkit-tap-highlight-color: transparent;
   }
 
   &-first {
