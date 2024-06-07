@@ -14,7 +14,7 @@
   padding: 40px 0px;
 
   @include mobile {
-    height: 845px;
+    height: 845px !important;
     padding: 100px 15px 70px 15px;
   }
 
@@ -50,7 +50,7 @@
 
     @include mobile {
       width: 100%;
-      margin-top: -5px;
+      margin-top: -5px !important;
     }
 
     @include tablet {
@@ -69,7 +69,7 @@
 
     @include mobile {
       width: 71%;
-      margin-top: -5px;
+      margin-top: -5px !important;
     }
 
     @include tablet {
@@ -87,8 +87,8 @@
     animation: matrix 9s ease;
 
     @include mobile {
-      width: 71%;
-      margin-top: -5px;
+      width: 71% !important;
+      margin-top: -5px !important;
     }
 
     @include tablet {
@@ -104,8 +104,8 @@
     animation: matrix 10s ease;
 
     @include mobile {
-      width: 17%;
-      margin-top: -98px;
+      width: 17% !important;
+      margin-top: -98px !important;
     }
 
     @include tablet {

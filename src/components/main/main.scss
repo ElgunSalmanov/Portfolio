@@ -12,7 +12,7 @@
   padding: 0 20px 35px 20px;
 
   @include mobile {
-    height: 845px;
+    height: 845px !important;
     flex-direction: column;
     justify-content: center;
     gap: 80px 0;
@@ -86,7 +86,7 @@
     animation: matrix 6s ease;
 
     @include mobile {
-      width: 70%;
+      width: 70% !important;
     }
 
     @include tablet {
