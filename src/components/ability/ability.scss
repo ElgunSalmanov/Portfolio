@@ -5,7 +5,6 @@
 // style for ability
 .ability {
   width: 100%;
-  min-height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,13 +14,7 @@
 
   @include mobile {
     height: 845px !important;
-    padding: 100px 15px 70px 15px;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  @include tablet {
-    height: 865px;
-    padding: 100px 15px 70px 15px;
+    padding: 100px 15px 70px 15px !important;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -33,11 +26,7 @@
     animation: matrix 6s ease;
 
     @include mobile {
-      width: 72%;
-    }
-
-    @include tablet {
-      width: 72%;
+      width: 72% !important;
     }
   }
 
@@ -51,13 +40,8 @@
     animation: matrix 7s ease;
 
     @include mobile {
-      width: 100%;
+      width: 100% !important;
       margin-top: -5px !important;
-    }
-
-    @include tablet {
-      width: 100%;
-      margin-top: -40px;
     }
   }
 
@@ -70,13 +54,8 @@
     animation: matrix 8s ease;
 
     @include mobile {
-      width: 71%;
+      width: 71% !important;
       margin-top: -5px !important;
-    }
-
-    @include tablet {
-      width: 71%;
-      margin-top: -50px;
     }
   }
 
@@ -92,11 +71,6 @@
       width: 71% !important;
       margin-top: -5px !important;
     }
-
-    @include tablet {
-      width: 41%;
-      margin-top: -45px;
-    }
   }
 
   &-fifth {
@@ -108,11 +82,6 @@
     @include mobile {
       width: 17% !important;
       margin-top: -98px !important;
-    }
-
-    @include tablet {
-      width: 12%;
-      margin-top: -40px;
     }
   }
 }
@@ -132,8 +101,8 @@
   z-index: 1;
 
   @include mobile {
-    width: 60px;
-    height: 95px;
+    width: 60px !important;
+    height: 95px !important;
   }
 
   &-image {

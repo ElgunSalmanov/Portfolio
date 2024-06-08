@@ -1,10 +1,10 @@
 //import styles
 @import "../../style/_animations.scss";
+@import "../../style/_media.scss";
 @import "../../style/_mixins.scss";
 
 // style for main
 #main {
-  min-height: 550px;
   display: flex;
   justify-content: space-between;
   align-items: center;
