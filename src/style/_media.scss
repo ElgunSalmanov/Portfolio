@@ -1,4 +1,4 @@
-// for mobile responsiveness
+// for Tv-screen responsiveness
 @media (max-width: 1920px) {
   #main {
     min-height: 800px;
@@ -97,6 +97,7 @@
   }
 }
 
+// for desktop responsiveness
 @media (max-width: 1700px) {
   #main {
     min-height: 550px;
@@ -196,6 +197,7 @@
   }
 }
 
+// for tablet responsiveness
 @media (max-width: 768px) {
   .info {
     flex-direction: column;
@@ -282,6 +284,7 @@
   }
 }
 
+// for mobile responsiveness
 @media (max-width: 425px) {
   .navigate-direction-link {
     font-size: 14px !important;

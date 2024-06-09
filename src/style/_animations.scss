@@ -1,3 +1,4 @@
+// for left to right animation
 @keyframes fadeLeft {
   from {
     opacity: 0;
@@ -9,6 +10,7 @@
   }
 }
 
+// for right to left animation
 @keyframes fadeRight {
   from {
     opacity: 0;
@@ -20,6 +22,7 @@
   }
 }
 
+// for top to bottom animation
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -31,6 +34,7 @@
   }
 }
 
+// for bottom to top animation
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -42,6 +46,7 @@
   }
 }
 
+// for matrix animation
 @keyframes matrix {
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -58,6 +63,7 @@
   }
 }
 
+// for clip animation
 @keyframes clip {
   0% {
     clip-path: inset(25% 100% 25% -50%);
